@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="min-h-screen bg-black flex flex-col justify-center items-center lg:px-4 ">
 
-    <div className="NAVBAR flex flex-row justify-between bg-blue-90 max-w-6xl  w-full  border-b-[1px] border-[#525252] lg:px-3 px-3 lg:py-2 p-1 lg:p-0 bg-red- backdrop-blur-lg top-0   fixed ">
+
+{/* NAVBAR  */}
+<div className="NAVBAR backdrop-blur-lg w-full  top-0   fixed flex justify-center">
+   
+    <div className="NAVBAR flex flex-row justify-between bg-blue-90 max-w-6xl  w-full  border-b-[1px] border-[#525252] lg:px-3 px-3 lg:py-2 p-1 lg:p-0 bg-red-  ">
 
       <div className="IntroWithProfile flex flex-row bg-red-90 w-fit px-1 py-1 items-center  justify-center lg:gap-3 gap-2  bg-red-90 ">
         <div className="profilepicture lg:w-10 lg:h-10 w-9 h-9 bg-white rounded-full border-[1px]  border-[#525252] flex items-center justify-center overflow-hidden">
@@ -18,7 +22,7 @@ function App() {
       </div>
 
       </div>
-      <div className="icons flex flex-row items-center justify-center bg-red- text-[#525252] lg:text-xl px-2 lg:gap-2 gap-1">
+      <div className="icons flex flex-row items-center justify-center bg-red- text-[#525252]  text-xl px-2 lg:gap-2 gap-1">
           <MdEmail className='cursor-pointer hover:text-zinc-500'/>
           <FaLinkedin className='cursor-pointer hover:text-zinc-500'/>
           <FaInstagram className='cursor-pointer hover:text-zinc-500'/>
@@ -26,15 +30,19 @@ function App() {
            
       </div>
     </div>
+</div>
+{/* NAVBAR  */}
 
-    <div className="blackEmpty lg:py-11 py-6   md:py-7 w-full bg-red-"></div>
+
+    <div className="blackEmpty lg:py-11 py-7   md:py-9 w-full bg-red-"></div>
       
       <div className="
        
         w-full 
         max-w-6xl 
         grid 
-        gap-3 
+        sm:gap-3 
+        gap-1
         bg-red-90 
         p-3
 
