@@ -10,7 +10,7 @@ function App() {
 {/* NAVBAR  */}
 <div className="NAVBAR backdrop-blur-lg w-full  top-0   fixed flex justify-center">
    
-    <div className="NAVBAR flex flex-row justify-between bg-blue-90 max-w-6xl  w-full  border-b-[1px] border-[#525252] lg:px-3 px-3 lg:py-2 p-1 lg:p-0 bg-red-  ">
+    <div className=" flex flex-row justify-between bg-blue-90 max-w-6xl  w-full  border-b-[1px] border-[#525252] lg:px-3 px-3 lg:py-2 p-1 lg:p-0 bg-red-  ">
 
       <div className="IntroWithProfile flex flex-row bg-red-90 w-fit px-1 py-1 items-center  justify-center lg:gap-3 gap-2  bg-red-90 ">
         <div className="profilepicture lg:w-10 lg:h-10 w-9 h-9 bg-white rounded-full border-[1px]  border-[#525252] flex items-center justify-center overflow-hidden">
