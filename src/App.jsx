@@ -10,10 +10,10 @@ function App() {
 
       <div className="IntroWithProfile flex flex-row bg-red-90 w-fit px-1 py-1 items-center  justify-center lg:gap-3 gap-2  bg-red-90 ">
         <div className="profilepicture lg:w-10 lg:h-10 w-9 h-9 bg-white rounded-full border-[1px]  border-[#525252] flex items-center justify-center overflow-hidden">
-          <img className='mt-2' src="/ayan.jpg" alt="" />
+          <img className='mt-2 pointer-events-none select-none' src="/ayan.jpg" alt="" />
         </div>
-      <div className="Intro  flex flex-col gap-0 tracking-tight md:leading-5 leading-4">
-        <div className="name text-white text-sm">Ayan Saifi</div>
+      <div className="Intro  flex flex-col gap-0 tracking-tight md:leading-5 leading-4 select-none">
+        <div className="name text-white lg:text-[17px] text-sm">Ayaan Saifi</div>
         <div className="work text-zinc-400 md:text-sm text-[11px]">Software Developer</div>
       </div>
 
@@ -45,13 +45,13 @@ function App() {
       ">
 
         {/* Box 1 */}
-        <div className="col-span-2 sm:col-span-2 border border-[#525252] rounded-lg lg:rounded-2xl bg-[#1e1e1e]" />
+        <div className="col-span-2 sm:col-span-2 border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e]" />
 
         {/* Box 2 */}
-        <div className="border sm:col-span-1 border-[#525252] rounded-lg lg:rounded-2xl bg-[#1e1e1e]" />
+        <div className="border sm:col-span-1 border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e]" />
 
         {/* Box 3 */}
-        <div className="border border-[#525252] rounded-lg lg:rounded-2xl bg-[#1e1e1e]" />
+        <div className="border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e]" />
 
         {/* Box 4 */}
         <div className="
@@ -61,7 +61,7 @@ function App() {
           sm:col-span-2
           lg:order-4
           border border-[#525252] 
-          rounded-lg lg:rounded-2xl 
+          rounded-lg lg:rounded-xl 
           bg-[#1e1e1e]
         " />
 
@@ -75,7 +75,7 @@ function App() {
           lg:row-span-3
           sm:order-4
           border border-[#525252] 
-          rounded-lg lg:rounded-2xl 
+          rounded-lg lg:rounded-xl 
           bg-[#1e1e1e]
         " />
 
@@ -86,7 +86,7 @@ function App() {
           sm:order-6
           sm:col-span-2
           border border-[#525252] 
-          rounded-lg lg:rounded-2xl 
+          rounded-lg lg:rounded-xl 
           bg-[#1e1e1e]
         " />
 
