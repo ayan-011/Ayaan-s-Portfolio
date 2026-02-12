@@ -1,9 +1,11 @@
 import './App.css'
 import { MdEmail } from "react-icons/md";
-import { FaFolder, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFolder, FaInstagram, FaLinkedin, FaNodeJs, FaReact } from "react-icons/fa";
 import { CiFileOn } from 'react-icons/ci'; 
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoTypescript } from 'react-icons/bi';
+import { SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
+import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
 
 function App() {
   return (
@@ -144,20 +146,20 @@ function App() {
         " >
           <div className="w-full px-2 py-0.5 border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 text-sm">Skills</div>
 
-          <div className="parent bg-red-90 w-full h-full flex flex-col gap-2 p-4" > 
+          <div className="parent bg-red-90 w-full h-fit flex flex-col gap-2 p-4 bg-red-" > 
             
             {/* language */}
             <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
               <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Languages</div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-1 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] text-yellow-500"><IoLogoJavascript /></div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] "><IoLogoJavascript /></div>
               <div className="text">Javascript</div>
               </div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-1 w-full text-zinc-300">
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
               <div className="icon flex mt-[2px]  "><BiLogoTypescript /></div>
               <div className="text">Typescript</div>
               </div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-1 w-full text-zinc-300">
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
               <div className="icon flex mt-[2px] ">C</div>
               <div className="text"></div>
               </div>
@@ -165,19 +167,39 @@ function App() {
              
              {/* MERN  */}
             <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
-              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Language</div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-1 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] text-yellow-500"><IoLogoJavascript /></div>
-              <div className="text">Javascript</div>
+              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">MERN stack</div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] "><SiMongodb /></div>
+              <div className="text">MongoDB</div>
+              </div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] "><SiExpress /></div>
+              <div className="text">Express</div>
+              </div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] "><FaReact  /></div>
+              <div className="text">React</div>
+              </div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] "><FaNodeJs  /></div>
+              <div className="text">NodeJS</div>
               </div>
             </div>
 
             {/* styles */}
             <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
-              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Language</div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-1 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] text-yellow-500"><IoLogoJavascript /></div>
-              <div className="text">Javascript</div>
+              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Tools & styles</div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] "><RiTailwindCssFill  /></div>
+              <div className="text">TailwindCSS</div>
+              </div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] "><SiPostman   /></div>
+              <div className="text">Postman</div>
+              </div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] "><RiNextjsFill    /></div>
+              <div className="text">NextJS</div>
               </div>
             </div>
 
