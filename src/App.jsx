@@ -2,6 +2,8 @@ import './App.css'
 import { MdEmail } from "react-icons/md";
 import { FaFolder, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { CiFileOn } from 'react-icons/ci'; 
+import { IoLogoJavascript } from "react-icons/io5";
+import { BiLogoTypescript } from 'react-icons/bi';
 
 function App() {
   return (
@@ -60,7 +62,7 @@ function App() {
 
           <div className="w-full px-2 py-0.5 border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 text-sm">About</div>
 
-          <div className="w-full text-white leading-5 text-[14px] py-2 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, mollitia quo? Quidem eum in esse cumque. Recusandae et quia cumque, nisi vero neque voluptatibus deserunt. Labore debitis illo deleniti nostrum?</div>
+          <div className="w-full text-white leading-5 text-[14px] py-2 font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, mollitia quo? Quidem eum in esse cumque. Recusandae et quia cumque, nisi vero neque voluptatibus deserunt. Labore debitis illo deleniti nostrum?</div>
         </div>
 
 
@@ -137,10 +139,53 @@ function App() {
           border border-[#525252] 
           rounded-lg lg:rounded-xl 
           bg-[#1e1e1e]
-          overflow-y-scroll scrollbar-hide
+          overflow-y-scroll scrollbar-hide           
+          px-2
         " >
-          <div className="w-full px-2 py-0.5 border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 text-sm">About me</div>
+          <div className="w-full px-2 py-0.5 border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 text-sm">Skills</div>
+
+          <div className="parent bg-red-90 w-full h-full flex flex-col gap-2 p-4" > 
+            
+            {/* language */}
+            <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
+              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Languages</div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-1 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] text-yellow-500"><IoLogoJavascript /></div>
+              <div className="text">Javascript</div>
+              </div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-1 w-full text-zinc-300">
+              <div className="icon flex mt-[2px]  "><BiLogoTypescript /></div>
+              <div className="text">Typescript</div>
+              </div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-1 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] ">C</div>
+              <div className="text"></div>
+              </div>
+            </div>
+             
+             {/* MERN  */}
+            <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
+              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Language</div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-1 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] text-yellow-500"><IoLogoJavascript /></div>
+              <div className="text">Javascript</div>
+              </div>
+            </div>
+
+            {/* styles */}
+            <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
+              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Language</div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-1 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] text-yellow-500"><IoLogoJavascript /></div>
+              <div className="text">Javascript</div>
+              </div>
+            </div>
+
           </div>
+
+          </div>
+
+
 
         {/* Box 5 */}
         <div className="
