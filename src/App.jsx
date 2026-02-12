@@ -6,6 +6,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoTypescript } from 'react-icons/bi';
 import { SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
 import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
+import { VscVscode } from 'react-icons/vsc';
 
 function App() {
   return (
@@ -144,7 +145,10 @@ function App() {
           overflow-y-scroll scrollbar-hide           
           px-2
         " >
-          <div className="w-full px-2 py-0.5 border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 text-sm">Skills</div>
+          <div className="w-full px-2 py-0.5 border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 text-sm flex flex-row justify-between">
+            <div className="text">Skills</div>
+            <div className="vscode logo flex items-center text-zinc-500 "><VscVscode /></div>
+          </div>
 
           <div className="parent bg-red-90 w-full h-fit flex flex-col gap-2 p-4 bg-red-" > 
             
@@ -167,7 +171,7 @@ function App() {
              
              {/* MERN  */}
             <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
-              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">MERN stack</div>
+              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Stacks</div>
               <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
               <div className="icon flex mt-[2px] "><SiMongodb /></div>
               <div className="text">MongoDB</div>
@@ -184,11 +188,15 @@ function App() {
               <div className="icon flex mt-[2px] "><FaNodeJs  /></div>
               <div className="text">NodeJS</div>
               </div>
+              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
+              <div className="icon flex mt-[2px] "><RiNextjsFill    /></div>
+              <div className="text">NextJS</div>
+              </div>
             </div>
 
             {/* styles */}
             <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
-              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Tools & styles</div>
+              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Other tools & styles</div>
               <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
               <div className="icon flex mt-[2px] "><RiTailwindCssFill  /></div>
               <div className="text">TailwindCSS</div>
@@ -197,10 +205,7 @@ function App() {
               <div className="icon flex mt-[2px] "><SiPostman   /></div>
               <div className="text">Postman</div>
               </div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] "><RiNextjsFill    /></div>
-              <div className="text">NextJS</div>
-              </div>
+              
             </div>
 
           </div>
