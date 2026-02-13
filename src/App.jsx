@@ -1,64 +1,31 @@
 import './App.css'
-import { MdEmail } from "react-icons/md";
-import { FaFolder, FaInstagram, FaLinkedin, FaNodeJs, FaReact } from "react-icons/fa";
-import { CiFileOn } from 'react-icons/ci'; 
-import { IoLogoJavascript } from "react-icons/io5";
-import { BiLogoTypescript } from 'react-icons/bi';
-import { SiExpress, SiMongodb, SiPostman } from 'react-icons/si';
-import { RiNextjsFill, RiTailwindCssFill } from 'react-icons/ri';
-import { VscVscode } from 'react-icons/vsc';
+
+
+import Skills from './Skills';
+import { Navbar } from './Navbar';
+import { Status } from './Status'; 
+import { Project } from './projects/Projects';
+import Contact from './Contact';
+ 
 
 function App() {
   return (
     <div className="min-h-screen bg-black flex flex-col justify-center items-center lg:px-4 ">
 
 
-{/* NAVBAR  */}
-<div className="NAVBAR backdrop-blur-lg w-full  top-0   fixed flex justify-center z-99">
-   
-    <div className=" flex flex-row justify-between bg-blue-90 max-w-6xl  w-full  border-b-[1px] border-[#525252] lg:px-3 px-3 lg:py-2 p-1 lg:p-0 bg-red-  ">
-
-      <div className="IntroWithProfile flex flex-row bg-red-90 w-fit px-1 py-1 items-center  justify-center lg:gap-3 gap-2  bg-red-90 ">
-        <div className="profilepicture lg:w-10 lg:h-10 w-9 h-9 bg-white rounded-full border-[1px]  border-[#525252] flex items-center justify-center overflow-hidden">
-          <img className='mt-2 pointer-events-none select-none' src="/ayan.jpg" alt="" />
-        </div>
-      <div className="Intro  flex flex-col gap-0 tracking-tight md:leading-5 leading-4 select-none">
-        <div className="name text-white lg:text-[17px] text-sm">Ayaan Saifi</div>
-        <div className="work text-zinc-400 md:text-sm text-[11px]">Software Developer</div>
-      </div>
-
-      </div>
-      <div className="icons flex flex-row items-center justify-center bg-red- text-[#525252]  text-xl px-2 lg:gap-2 gap-1">
-          <MdEmail className='cursor-pointer hover:text-zinc-500'/>
-          <FaLinkedin className='cursor-pointer hover:text-zinc-500'/>
-          <FaInstagram className='cursor-pointer hover:text-zinc-500'/>
-          
-           
-      </div>
-    </div>
-</div>
-{/* NAVBAR  */}
+        {/* NAVBAR  */}
+           <Navbar/>
+        {/* NAVBAR  */}
 
 
     <div className="blackEmpty lg:py-11 py-7   md:py-9 w-full bg-red-    relative z-10"></div>
       
-      <div className="
-       
-        w-full 
-        max-w-6xl 
-        grid 
-        sm:gap-3 
-        gap-1
-        bg-red-90 
-        p-3
-
-        grid-cols-2 auto-rows-[120px]   /* Mobile */
-        sm:grid-cols-4                  /* Small */
-        md:grid-cols-4                  /* Tablet */
-        lg:grid-cols-6 lg:auto-rows-[140px] /* Desktop */
-
-     
-      ">
+      <div className=" w-full max-w-6xl grid sm:gap-3 gap-1 bg-red-90 p-3 
+                       grid-cols-2 auto-rows-[120px]   /* Mobile */
+                       sm:grid-cols-4                  /* Small */
+                       md:grid-cols-4                  /* Tablet */
+                       lg:grid-cols-6 lg:auto-rows-[140px] /* Desktop */ ">
+      
 
         {/* Box 1 */}
         <div className="col-span-2 sm:col-span-2 border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] overflow-hidden overflow-y-scroll scrollbar-hide px-2 flex flex-col gap-1" >
@@ -72,32 +39,8 @@ function App() {
 
         {/* Box 2 */}
         <div className="border sm:col-span-1 border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] px-2  flex flex-col gap-2 overflow-y-scroll scrollbar-hide" >
-
-          <div className="status w-full  border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 flex flex-row justify-between px-2 py-0.5">
-            <div className="text-sm">Status</div>
-            <div className="icon"></div>
-          </div>
-          <div className="available_for flex flex-row bg-red-90 items-center gap-2">
-            <div className="folder_icon text-zinc-400 text- bg-whit h-fit w-fit   "><FaFolder /></div>
-            <p className='folder_icon text-zinc-200  text-sm bg-blue-90  '>available_for</p>
-          </div>
-          
-          <div className="files flex flex-col px-3 leading-5 mb-2 ">
-            <div className="flex items-center gap-2 flex-row ">
-              <div className="icon text-zinc-100"> <CiFileOn />  </div>
-              <div className="text-sm text-zinc-400 hover:text-zinc-300 select-none underline">freelance</div>
-            </div>
-            <div className="flex items-center gap-2 flex-row ">
-              <div className="icon text-zinc-100"> <CiFileOn />  </div>
-              <div className="text-sm text-zinc-400 hover:text-zinc-300 select-none underline">contact</div>
-            </div>
-            <div className="flex items-center gap-2 flex-row ">
-              <div className="icon text-zinc-100"> <CiFileOn />  </div>
-              <div className="text-sm text-zinc-400 hover:text-zinc-300 select-none underline">full-time</div>
-            </div>
-          </div>
-
-           </div>
+        <Status/>
+        </div>
 
         {/* Box 3 */}
        <div className="relative border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] overflow-hidden group">
@@ -129,107 +72,22 @@ function App() {
 
   </div>
 
-</div>
+       </div>
 
 
         {/* Box 4 */}
-        <div className="
-          col-span-2 
-          row-span-2
-          sm:order-6
-          sm:col-span-2
-          lg:order-4
-          border border-[#525252] 
-          rounded-lg lg:rounded-xl 
-          bg-[#1e1e1e]
-          overflow-y-scroll scrollbar-hide           
-          px-2
-        " >
-          <div className="w-full px-2 py-0.5 border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 text-sm flex flex-row justify-between">
-            <div className="text">Skills</div>
-            <div className="vscode logo flex items-center text-zinc-500 "><VscVscode /></div>
-          </div>
-
-          <div className="parent bg-red-90 w-full h-fit flex flex-col gap-2 p-4 bg-red-" > 
-            
-            {/* language */}
-            <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
-              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Languages</div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] "><IoLogoJavascript /></div>
-              <div className="text">Javascript</div>
-              </div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px]  "><BiLogoTypescript /></div>
-              <div className="text">Typescript</div>
-              </div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] ">C</div>
-              <div className="text"></div>
-              </div>
-            </div>
-             
-             {/* MERN  */}
-            <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
-              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Stacks</div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] "><SiMongodb /></div>
-              <div className="text">MongoDB</div>
-              </div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] "><SiExpress /></div>
-              <div className="text">Express</div>
-              </div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] "><FaReact  /></div>
-              <div className="text">React</div>
-              </div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] "><FaNodeJs  /></div>
-              <div className="text">NodeJS</div>
-              </div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] "><RiNextjsFill    /></div>
-              <div className="text">NextJS</div>
-              </div>
-            </div>
-
-            {/* styles */}
-            <div className="border-[1px] border-[#525252] rounded  flex flex-col  items-center ">
-              <div className="top bg-red- w-full text-sm p-[2px] px-2 text-zinc-500 border-b-[1px] border-[#525252]">Other tools & styles</div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] "><RiTailwindCssFill  /></div>
-              <div className="text">TailwindCSS</div>
-              </div>
-              <div className="flex flex-row items-center p-[2px] px-2 gap-2 w-full text-zinc-300">
-              <div className="icon flex mt-[2px] "><SiPostman   /></div>
-              <div className="text">Postman</div>
-              </div>
-              
-            </div>
-
-          </div>
-
+        <div className=" col-span-2 row-span-2 sm:order-6 sm:col-span-2 lg:order-4 border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] overflow-y-scroll scrollbar-hide px-2 " > 
+           <Skills/>
           </div>
 
 
 
         {/* Box 5 */}
-        <div className="
-          col-span-2 
-          sm:col-span-4 
-          md:col-span-4 
-          lg:col-span-4 
-          row-span-2 
-          lg:row-span-3
-          sm:order-4
-          border border-[#525252] 
-          rounded-lg lg:rounded-xl 
-          bg-[#1e1e1e]
-          overflow-y-scroll scrollbar-hide
-        " >
-          <div className="w-full px-2 py-0.5 text-sm border-b-[1px] border-[#525252] bg-red-90 text-zinc-300">About me</div>
-          </div>
+        <div className="col-span-2 row-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 row-span-2 lg:row-span-3 sm:order-4 border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] overflow-y-scroll scrollbar-hide px-2 flex flex-col" >
+         
+         <Project/>         
+
+        </div>
 
         {/* Box 6 */}
         <div className="
@@ -241,8 +99,11 @@ function App() {
           rounded-lg lg:rounded-xl 
           bg-[#1e1e1e]
           overflow-y-scroll scrollbar-hide
+          px-2
+         
         " >
-          <div className="w-full px-2 py-0.5 text-sm border-b-[1px] border-[#525252] bg-red-90 text-zinc-300">About me</div>
+          
+          <Contact/>
           
           </div>
 
