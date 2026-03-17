@@ -9,7 +9,7 @@ function Skills(){
 
     return (
           <>
-              <div className="w-full px-2 py-0.5 border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 text-sm flex flex-row justify-between">
+              <div className="w-full px-2 py-0.5 border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 text-sm flex flex-row justify-between ">
             <div className="text">Skills</div>
             <div className="vscode logo flex items-center text-zinc-500 "><VscVscode /></div>
           </div>
