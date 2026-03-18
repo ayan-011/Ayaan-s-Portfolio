@@ -27,22 +27,22 @@ const Contact = () => {
             {/* Ions  */}
             <div className="address flex flex-row gap-2 w-full bg-red-90 border-t-[1px] border-[#525252] p-2 text-lg text-zinc-500">
                  
-                 <a target="_blank" rel="noopener noreferrer" href="">
+                 <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ayaan_saifi__1/">
                     <FaInstagram className='cursor-pointer hover:text-zinc-400'/>
                  </a>
-                 <a target="_blank" rel="noopener noreferrer" href="">
+                 <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXLFVCCSxWhLxssDthdgHtzLJHrjBdhLLZTgLJPZbGcZWxzprJxSBfSDnvzTzvccVrZlV">
                     <MdEmail className='cursor-pointer hover:text-zinc-400'/> 
                  </a>
-                 <a target="_blank" rel="noopener noreferrer" href="">
+                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ayaan-saifi-782505319/">
                     <FaLinkedin className='cursor-pointer hover:text-zinc-400'/>
                  </a>
-                 <a target="_blank" rel="noopener noreferrer" href="">
+                 <a target="_blank" rel="noopener noreferrer" href="https://x.com/ayaan_saifi_1">
                     <FaSquareXTwitter className='cursor-pointer hover:text-zinc-400'/>
                  </a>
-                 <a target="_blank" rel="noopener noreferrer" href="">
+                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/ayan-011">
                     <FaGithub className='cursor-pointer hover:text-zinc-400'/>
                  </a>
-                 <a target="_blank" rel="noopener noreferrer" href="/">
+                 <a target="_blank" rel="noopener noreferrer" href="https://wa.me/919899729915">
                     <FaWhatsapp  className='cursor-pointer hover:text-zinc-400'/>
                  </a>
                   

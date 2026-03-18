@@ -34,7 +34,7 @@ function App() {
 
           <div className="w-full px-2 py-0.5 border-b-[1px] border-[#525252] bg-red-90 text-zinc-300 text-sm">About</div>
 
-          <div className="w-full text-white leading-5 text-[14px] py-2 font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, mollitia quo? Quidem eum in esse cumque. Recusandae et quia cumque, nisi vero neque voluptatibus deserunt. Labore debitis illo deleniti nostrum?</div>
+          <div className="w-full text-white leading-5 text-[14px] py-2 font-semibold">I’m a frontend developer who enjoys building websites with React. I like solving problems, designing clean layouts, and continuously learning to become better at what I do.</div>
         </div>
 
 
@@ -44,8 +44,10 @@ function App() {
         <Status/>
         </div>
 
-        {/* Box 3 */}
-       <div className="relative border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] overflow-hidden group">
+        {/* Box 3 Location  */}
+       <div className="relative border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] overflow-hidden group 
+       cursor-[url('https://cdn-icons-png.flaticon.com/24/684/684908.png'),_pointer]
+       ">
 
   {/* Background Video */}
   <video
