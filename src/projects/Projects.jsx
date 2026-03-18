@@ -7,28 +7,28 @@ export function Project(){
      const cardsData = [
     {
       id: 1,
-      title: "Web Development",
-      description: "Redefined UI building for developers. Quickly add components, themes, and responsive layouts to your app at any scale.",
-      image: "img1.jpg",
-      live: "https://www.mihircodes.in/",
-      github: "https://www.mihircodes.in/"
+      title: "Ecommerce Project",
+      description: "A responsive e-commerce web application with product listings, cart management, and a streamlined checkout flow. Built with a focus on performance, clean UI, and intuitive user experience.",
+      image: "/thumbnails/ecommerce.png",
+      live: "https://online-store-one-pi.vercel.app/",
+      github: "https://github.com/ayan-011/online-store"
     },
     {
       id: 2,
-      title: "Backend Development",
-      description: "Redefined UI building for developers. Quickly add components, themes, and responsive layouts to your app at any scale.",
-      image: "img2.jpg",
-      live: "",
-      github: ""
+      title: "Sportech",
+      description: "Sportech is a sleek showcase website for a modern garage, highlighting its work, services, and features. Get a glimpse of the team's expertise, past projects, and what makes Sportech the go-to garage for car enthusiasts.",
+      image: "/thumbnails/sportech.png",
+      live: "https://sportech-w5nx.vercel.app/",
+      github: "https://github.com/ayan-011/sportech"
     },
-    {
-      id: 3,
-      title: "UI Design",
-      description: "Redefined UI building for developers. Quickly add components, themes, and responsive layouts to your app at any scale",
-      image: "img3.jpg",
-      live: "",
-      github: ""
-    },
+    // {
+    //   id: 3,
+    //   title: "UI Design",
+    //   description: "Redefined UI building for developers. Quickly add components, themes, and responsive layouts to your app at any scale",
+    //   image: "img3.jpg",
+    //   live: "",
+    //   github: "https://github.com/ayan-011"
+    // },
   ];
 
     return (
