@@ -28,8 +28,8 @@ export default function Viewallskills() {
       <div className="max-w-6xl mx-auto">
 
        <Link to="/">
-        <button className="text-lg text-zinc-400 hover:text-white transition mb-6">
-          ← Go back
+        <button className="text-lg text-zinc-400 hover:text-white transition mb-6 flex">
+            <p className="flex items-center">←</p>  Go back
         </button>
         </Link>
 

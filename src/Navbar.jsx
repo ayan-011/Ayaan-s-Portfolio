@@ -15,15 +15,20 @@ export function Navbar(){
         </div>
       <div className="Intro  flex flex-col gap-0 tracking-tight md:leading-5 leading-4 select-none">
         <div className="name text-white lg:text-[17px] text-sm">Ayaan Saifi</div>
-        <div className="work text-zinc-400 md:text-sm text-[11px]">Software Developer / Designer</div>
+        <div className="work text-zinc-400 md:text-sm text-[11px]">Software Developer | Designer</div>
       </div>
 
       </div>
       <div className="icons flex flex-row items-center justify-center bg-red- text-[#525252]  sm:text-xl  text-md px-2 lg:gap-2 gap-1">
+        <a target="_blank" rel="noopener noreferrer" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXLFVCCSxWhLxssDthdgHtzLJHrjBdhLLZTgLJPZbGcZWxzprJxSBfSDnvzTzvccVrZlV">
           <MdEmail className='cursor-pointer hover:text-zinc-500'/>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/ayaan-saifi-782505319/">
           <FaLinkedin className='cursor-pointer hover:text-zinc-500'/>
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/ayaan_saifi__1/">
           <FaInstagram className='cursor-pointer hover:text-zinc-500'/>
-          
+        </a>
            
       </div>
     </div>
