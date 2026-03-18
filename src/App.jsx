@@ -76,6 +76,8 @@ function App() {
 
   </div>
 
+  <div className="india bg-red-90 text-zinc-300 font-semibold p-3 relative">India</div>
+
        </div>
 
 
