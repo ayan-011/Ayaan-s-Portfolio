@@ -1,27 +1,38 @@
 // Allprojects
 
 import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FiLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const projects = [
-  {
-    title: "Atomix UI",
-    date: "Oct 2024 – Nov 2024",
-    description:
-      "Redefined UI building for developers. Quickly add components, themes, and responsive layouts to your app at any scale.",
-    tags: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
-    image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1400&auto=format&fit=crop",
-  },
-  {
-    title: "Weblytics",
-    date: "Feb 2025 – Mar 2025",
-    description:
-      "Unlock powerful insights with ease. Track visitor behavior, monitor key metrics, and optimize performance effortlessly.",
-    tags: ["Next.js", "TypeScript", "Analytics", "Data Visualization"],
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1400&auto=format&fit=crop",
-  },
+   {
+      id: 1,
+      title: "Script Generator",
+      tags: ["Next.js", "Typescript","React", "Tailwind CSS", ],
+      description: "Script Generator application that helps users quickly create structured and engaging scripts for various purposes. The project focuses on simplicity and efficiency, allowing users to generate content with minimal input while maintaining quality output.",
+      image: "/thumbnails/scriptgenerator.png",
+      live: "https://v0-you-tube-shorts-script-rosy.vercel.app/",
+      github: "https://github.com/ayan-011/script_generator"
+    },
+    {
+      id: 2,
+      title: "Ecommerce Project",
+       tags: ["Next.js", "Typescript","React", "Tailwind CSS", ],
+      description: "A responsive e-commerce web application with product listings, cart management, and a streamlined checkout flow. Built with a focus on performance, clean UI, and intuitive user experience.",
+      image: "/thumbnails/ecommerce.png",
+      live: "https://online-store-one-pi.vercel.app/",
+      github: "https://github.com/ayan-011/online-store"
+    },
+    {
+      id: 3,
+      title: "Sportech",
+       tags: ["Next.js", "Typescript","React", "Tailwind CSS", ],
+      description: "Sportech is a sleek showcase website for a modern garage, highlighting its work, services, and features. Get a glimpse of the team's expertise, past projects, and what makes Sportech the go-to garage for car enthusiasts.",
+      image: "/thumbnails/sportech.png",
+      live: "https://sportech-w5nx.vercel.app/",
+      github: "https://github.com/ayan-011/sportech"
+    },
 ];
 
 export default function Allprojects() {
@@ -33,11 +44,14 @@ export default function Allprojects() {
       <div className=" lg:max-w-[51vw] max-w-full mx-auto">
         
         {/* Go Back */}
-        <Link to="/">
-        <button className="text-lg text-zinc-400 hover:text-white transition mb-6 flex">
-          <p className="flex items-center">←</p> Go back
+        <div className="w-full flex">
+
+        <a href="/" >
+        <button className="text-lg text-zinc-400   hover:text-white transition mb-6 flex  cursor-pointer">
+          <p className=" items-center ">←</p> Go back
         </button>
-        </Link>
+        </a>
+        </div>
 
         {/* Heading */}
         <h1 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -53,15 +67,26 @@ export default function Allprojects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:scale-[1.02] transition duration-300"
+              className="bg-zinc-900 border border-zinc-800 rounded-xl "
             >
               {/* Image */}
               <div className="h-48 w-full overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover overflow-hidden hover:scale-[1.02] transition duration-300"
                 />
+              </div>
+
+              {/* Link  */}
+              <div className="links  w-full justify-end flex">
+
+                <div className="logos flex gap-2 p-2">
+                    <a  className="hover:text-zinc-400 " target="_blank" rel="noopener noreferrer"   href={project.github} ><FaGithub /></a>
+                    
+                    <a className="hover:text-zinc-400" target="_blank" rel="noopener noreferrer"  href={project.live} ><FiLink /></a>
+                </div>
+
               </div>
 
               {/* Content */}
@@ -69,9 +94,9 @@ export default function Allprojects() {
                 <h2 className="text-lg font-semibold mb-1">
                   {project.title}
                 </h2>
-                <p className="text-xs text-zinc-500 mb-4">
+                {/* <p className="text-xs text-zinc-500 mb-4">
                   {project.date}
-                </p>
+                </p> */}
 
                 <p className="text-sm text-zinc-400 mb-5 leading-relaxed">
                   {project.description}
