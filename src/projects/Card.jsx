@@ -5,8 +5,8 @@ function Card({ title, description, image, live, github }) {
   return (
    <div className="bg-[#1a1919c2]  rounded-lg overflow-hidden flex flex-col border-[1px] border-[#353535] hover:border-[#424242] hover:transition-all duration-300 shadow-2xl shadow-zinc-950">
   
- <div className="h-fit w-full overflow-hidden bg-white">
-  <a href={live} target="_blank" rel="noopener noreferrer">
+ <div className="h-fit w-full overflow-hidden  bg-white">
+  <a href={live} target="_blank" rel="noopener noreferrer ">
     <img
       src={image}
       alt={title}
