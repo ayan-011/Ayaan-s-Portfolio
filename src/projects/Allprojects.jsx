@@ -63,18 +63,18 @@ export default function Allprojects() {
         </p>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8  ">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-zinc-900 border border-zinc-800 rounded-xl "
+              className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden"
             >
               {/* Image */}
-              <div className="h-48 w-full overflow-hidden">
+              <div className="h-48 w-full   bg-cover">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover overflow-hidden hover:scale-[1.02] transition duration-300"
+                  className="w-full h-full object-cover   hover:scale-[1.02] transition duration-300"
                 />
               </div>
 
