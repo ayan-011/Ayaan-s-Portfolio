@@ -81,7 +81,7 @@ function App() {
        </div>
 
 
-        {/* Box 4 */}
+        {/* Box 4  skills */}
         <div className=" col-span-2 row-span-2 sm:order-6 sm:col-span-2 lg:order-4 border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] sm:overflow-y-scroll scrollbar-hide px-2 md:bg-none
         // mobile
         overflow-hidden
@@ -93,9 +93,9 @@ function App() {
 </div>
 
 {/* Mobile Button */}
-<div className="absolute bottom-4 left-0 w-full flex justify-center sm:hidden z-20  ">
   <Link to="/viewallskills">
-  <button className="px-3 py-1.5 text-xs border border-zinc-400 
+<div className="absolute bottom-4 left-0 w-full flex justify-center sm:hidden z-20   ">
+  <button className="px-3 py-1.5 text-xs border border-zinc-400   
     text-zinc-200 rounded-full flex items-center gap-1.5
     backdrop-blur-sm bg-black/40
        ">
@@ -108,8 +108,8 @@ function App() {
     
   </button>
   
-  </Link>
 </div>
+  </Link>
 
         
            <  Skills/>
@@ -117,7 +117,7 @@ function App() {
 
 
 
-        {/* Box 5 */}
+        {/* Box 5 projects*/}
         <div className="col-span-2 row-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 row-span-2 lg:row-span-3 sm:order-4 border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] sm:overflow-y-scroll scrollbar-hide px-2 flex flex-col 
         // mobile
           relative 
@@ -130,22 +130,22 @@ function App() {
 </div>
 
 {/* Mobile Button */}
+  <Link to="/allprojects">
 <div className="absolute bottom-4 left-0 w-full flex justify-center sm:hidden z-20  ">
   <button className="px-3 py-1.5 text-xs border border-zinc-400 
     text-zinc-200 rounded-full flex items-center gap-1.5
     backdrop-blur-sm bg-black/40
        ">
     
-    <Link to="/allprojects">
   <button className="tracking-tight">
     View More
   </button>
-</Link>
 
     <IoIosArrowForward className="text-sm" />
     
   </button>
 </div>
+</Link>
          
          <Project/>         
 
