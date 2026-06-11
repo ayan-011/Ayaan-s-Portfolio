@@ -1,4 +1,5 @@
 import './App.css'
+ import React, { useState, useEffect } from "react";
 
 
 import Skills from './Skills';
@@ -8,11 +9,67 @@ import { Project } from './projects/Projects';
 import Contact from './Contact';
 import { IoIosArrowForward } from 'react-icons/io';
 import { Link } from 'react-router-dom';
+
+// GLowing Svg's
+import VsGlow from './components/floatingicons/Vs';
+import TsGlow from './components/floatingicons/Ts';
+import JsGlow from './components/floatingicons/js';
+import Loader from './Loading'; 
+
+
+
   
 
 function App() {
+
+   const [loading, setLoading] = useState(true);
+
+  // List all images and videos that need to be preloaded
+  const assets = [
+      "/map1.mp4",
+       
+      "/ayan.jpg", 
+      "/thumbnails/ecommerce.png", 
+      "/thumbnails/scriptgenerator.png", 
+    // "/images/car3.jpg",
+    // "/carvideo.mp4",
+  ];
+
+  useEffect(() => {
+    let loadedCount = 0;
+
+    assets.forEach((src) => {
+      if (src.endsWith(".mp4")) {
+        const video = document.createElement("video");
+        video.src = src;
+        video.onloadeddata = () => {
+          loadedCount += 1;
+          if (loadedCount === assets.length) setLoading(false);
+        };
+        video.onerror = () => {
+          loadedCount += 1;
+          if (loadedCount === assets.length) setLoading(false);
+        };
+      } else {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => {
+          loadedCount += 1;
+          if (loadedCount === assets.length) setLoading(false);
+        };
+        img.onerror = () => {
+          loadedCount += 1;
+          if (loadedCount === assets.length) setLoading(false);
+        };
+      }
+    });
+  }, []);
+
+  if (loading) return <Loader/>; // Show loader until all assets are loaded
+
+
   return (
-    <div className="min-h-screen bg-black flex flex-col justify-center items-center lg:px-4 ">
+    <div className="min-h-screen bg-black flex flex-col justify-center items-center lg:px-4 relative   overflow-x-hidden">
 
 
         {/* NAVBAR  */}
@@ -20,9 +77,27 @@ function App() {
         {/* NAVBAR  */}
 
 
-    <div className="blackEmpty lg:py-11 py-7 md:py-9 w-full relative z-10 "></div>
+    <div className="blackEmpty lg:py-11 py-7 md:py-9 w-full relative z-10  "></div>
+
+{/* Glowing svg's */}
+<>
+
+    <div className=" absolute mt-90 -ml-300 opacity-50 hidden lg:flex ">
+            <VsGlow/>
+    </div>
       
-      <div className=" w-full max-w-6xl grid sm:gap-3 gap-1 bg-red-90 p-3 
+    <span className="absolute -mt-100 lg:ml-288  opacity-50  hidden   lg:block">
+            <TsGlow/>
+    </span>
+      
+    <div className="  absolute -mt-130  -ml-50 opacity-50  hidden lg:flex">
+            <JsGlow/>
+    </div>
+</>
+{/* Glowing svg's */}
+
+{/* Main  */}
+      <div className=" w-full max-w-6xl grid sm:gap-3 gap-1 bg-red-90 p-3  
                        grid-cols-2 auto-rows-[120px]   /* Mobile */
                        sm:grid-cols-4                  /* Small */
                        md:grid-cols-4                  /* Tablet */
@@ -40,7 +115,7 @@ function App() {
 
 
         {/* Box 2 */}
-        <div className="border sm:col-span-1 border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] px-2  flex flex-col gap-2 overflow-y-scroll scrollbar-hide" >
+        <div className="border sm:col-span-1 border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] px-2  flex flex-col gap-2 overflow-y-scroll scrollbar-hide backdrop-opacity-100 " >
         <Status/>
         </div>
 

@@ -10,6 +10,8 @@ export function Navbar(){
     <div className=" flex flex-row justify-between bg-blue-90 max-w-6xl  w-full  border-b-[1px] border-[#525252] lg:px-3 px-1 lg:py-2 p-1 lg:p-0 bg-red-  ">
 
       <div className="IntroWithProfile flex flex-row bg-red-90 w-fit px-1 py-1 items-center  justify-center lg:gap-3 gap-2  bg-red-90 ">
+
+{/* Profile Image */}
         <div className="profilepicture lg:w-10 lg:h-10 w-9 h-9 bg-white rounded-full border-[1px]  border-[#525252] flex items-center justify-center overflow-hidden">
           <img className='mt-2 pointer-events-none select-none' src="/ayan.jpg" alt="" />
         </div>

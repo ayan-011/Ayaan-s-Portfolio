@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Allprojects from './projects/Allprojects.jsx'
 import ScrollToTop from './ScrollToTop/ScrollToTop.jsx'
 import Viewallskills from './Viewallskills.jsx'
+import Loader from './Loading.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -15,6 +16,8 @@ createRoot(document.getElementById('root')).render(
       <Route path="/" element={<App />} />
       <Route path="/allprojects" element={<Allprojects />} />
       <Route path="/viewallskills" element={<Viewallskills />} />
+      
+        <Route path="/load" element={<Loader />} />
       {/* <Route path="*" element={<NotFound />} /> */}
     </Routes>
     </BrowserRouter>
