@@ -7,24 +7,24 @@ import Allprojects from './projects/Allprojects.jsx'
 import ScrollToTop from './ScrollToTop/ScrollToTop.jsx'
 import Viewallskills from './Viewallskills.jsx'
 import Loader from './Loading.jsx'
-import Page from './page.jsx'
-// import { NoiseBackgroundDemoSecond } from './components/ui/noise-background.jsx'
+  // import { NoiseBackgroundDemoSecond } from './components/ui/noise-background.jsx'
  
  
 
 createRoot(document.getElementById('root')).render(
+ 
   <StrictMode>
    <BrowserRouter>
      <ScrollToTop />
         <Routes>
+          
       <Route path="/" element={<App />} />
       <Route path="/allprojects" element={<Allprojects />} />
       <Route path="/viewallskills" element={<Viewallskills />} />
       
         <Route path="/load" element={<Loader />} />
-        <Route path="/page" element={<Page />} /> 
-    </Routes>
+     </Routes>
     </BrowserRouter>
     
-  </StrictMode>,
+  </StrictMode>
 )

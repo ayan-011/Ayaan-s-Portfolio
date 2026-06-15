@@ -15,7 +15,8 @@ import VsGlow from './components/floatingicons/Vs';
 import TsGlow from './components/floatingicons/Ts';
 import JsGlow from './components/floatingicons/js';
 import Loader from './Loading'; 
-
+import { GradientBackground } from './components/noisy-gradient-backgrounds';
+ 
 
 
   
@@ -69,7 +70,13 @@ function App() {
 
 
   return (
-    <div className="min-h-screen bg-black flex flex-col justify-center items-center lg:px-4 relative   overflow-x-hidden">
+      
+  <div className="relative min-h-screen">
+    <div
+        className="absolute inset-0 bg-[url('/noise.gif')] opacity-5 pointer-events-none  z-30"
+      />
+   
+    <div className=" z-20 relative   bg-red-9  min-h-screen bg- flex flex-col justify-center items-center lg:px-4     overflow-x-hidden ">
 
 
         {/* NAVBAR  */}
@@ -77,7 +84,7 @@ function App() {
         {/* NAVBAR  */}
 
 
-    <div className="blackEmpty lg:py-11 py-7 md:py-9 w-full relative z-10  "></div>
+    <div className="blackEmpty lg:py-11 py-7 md:py-9 w-full relative z-10"></div>
 
 {/* Glowing svg's */}
 <>
@@ -97,7 +104,7 @@ function App() {
 {/* Glowing svg's */}
 
 {/* Main  */}
-      <div className=" w-full max-w-6xl grid sm:gap-3 gap-1 bg-red-90 p-3  
+      <div className=" w-full max-w-6xl grid sm:gap-3 gap-1 bg-red-90 p-3    
                        grid-cols-2 auto-rows-[120px]   /* Mobile */
                        sm:grid-cols-4                  /* Small */
                        md:grid-cols-4                  /* Tablet */
@@ -193,7 +200,8 @@ function App() {
 
 
         {/* Box 5 projects*/}
-        <div className="col-span-2 row-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 row-span-2 lg:row-span-3 sm:order-4 border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e] sm:overflow-y-scroll scrollbar-hide px-2 flex flex-col 
+         
+        <div className="col-span-2 row-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 row-span-2 lg:row-span-3 sm:order-4 border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e]  overflow-y-scroll scrollbar-hide px-2 flex flex-col 
         // mobile
           relative 
           overflow-hidden
@@ -225,7 +233,7 @@ function App() {
          <Project/>         
 
         </div>
-
+             
         {/* Box 6 */}
         <div className="
           col-span-2 
@@ -246,7 +254,13 @@ function App() {
 
       </div>
 
+    </div> 
+
     </div>
+
+    
+    
+    
   )
 }
 

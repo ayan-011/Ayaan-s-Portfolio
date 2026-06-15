@@ -1,13 +1,13 @@
-import React from 'react' 
-import { NoiseBackgroundDemoSecond } from "./components/NoiseBackgroundDemoSecond";
+// import React from 'react' 
+// // import { NoiseBackgroundDemoSecond } from "./components/NoiseBackgroundDemoSecond"; 
+// import { GradientBackground } from './components/noisy-gradient-backgrounds';
+// import SectionNoise from './components/SectionNoise ';
 
-const Page = () => {
-  return (
-    <div className='bg-white h-screen w-full'>
-        
-      <NoiseBackgroundDemoSecond></NoiseBackgroundDemoSecond>
-    </div>
-  )
-}
+// const Page = () => {
+//   return (
+//     <SectionNoise></SectionNoise>
 
-export default Page
+//   )
+// }
+
+// export default Page
