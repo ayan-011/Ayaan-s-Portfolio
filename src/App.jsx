@@ -201,14 +201,14 @@ function App() {
 
         {/* Box 5 projects*/}
          
-        <div className="col-span-2 row-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 row-span-2 lg:row-span-3 sm:order-4 border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e]  overflow-y-scroll scrollbar-hide px-2 flex flex-col 
+        <div className="col-span-2 row-span-4 sm:col-span-4 md:col-span-4 lg:col-span-4 row-span-2 lg:row-span-3 sm:order-4 border border-[#525252] rounded-lg lg:rounded-xl bg-[#1e1e1e]  sm:overflow-y-scroll scrollbar-hide px-2 flex flex-col 
         // mobile
           relative 
           overflow-hidden
         " >
 
-           <div className="absolute bottom-0 left-0 w-full h-52
-  bg-gradient-to-t from-[#000000ee] via-[#202020cc] to-transparent
+           <div className="absolute bottom-0 left-0 w-full h-28
+  bg-gradient-to-t from-[#131313] via-[#161616a8] to-transparent
   sm:hidden pointer-events-none">
 </div>
 
