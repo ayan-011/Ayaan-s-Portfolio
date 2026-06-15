@@ -16,7 +16,7 @@ export function Project() {
       id: 2,
       title: 'Script Generator',
       description:
-        'Script Generator application that helps users quickly create structured and engaging scripts for various purposes. The project focuses on simplicity and efficiency, allowing users to generate content with minimal input while maintaining quality output.',
+        'Script Generator application that helps users quickly create structured and engaging scripts for various purposes. Allowing users to generate content with minimal input while maintaining quality output.',
       image: '/thumbnails/scriptgenerator.png',
       live: 'https://v0-you-tube-shorts-script-rosy.vercel.app/',
       github: 'https://github.com/ayan-011/script_generator',
