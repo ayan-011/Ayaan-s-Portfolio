@@ -1,5 +1,5 @@
 import './App.css'
- import React, { useState, useEffect } from "react";
+ import React, { useState, useEffect,useRef } from "react";
 
 
 import Skills from './Skills';
@@ -14,14 +14,19 @@ import { Link } from 'react-router-dom';
 import VsGlow from './components/floatingicons/Vs';
 import TsGlow from './components/floatingicons/Ts';
 import JsGlow from './components/floatingicons/js';
+
+//Loading
 import Loader from './Loading'; 
+
+//project Cards
 import { GradientBackground } from './components/noisy-gradient-backgrounds';
+
  
 
-
-  
-
 function App() {
+
+ 
+
 
    const [loading, setLoading] = useState(true);
 
@@ -71,7 +76,7 @@ function App() {
 
   return (
       
-  <div className="relative min-h-screen">
+  <div className="relative min-h-screen"  >
     <div
         className="absolute inset-0 bg-[url('/noise.gif')] opacity-5 pointer-events-none  z-30"
       />
@@ -207,14 +212,14 @@ function App() {
           overflow-hidden
         " >
 
-           <div className="absolute bottom-0 left-0 w-full h-28
-  bg-gradient-to-t from-[#131313] via-[#161616a8] to-transparent
+           <div className="absolute bottom-0 left-0 w-full h-28   z-25
+   bg-gradient-to-t from-[#131313] via-[#161616a8] to-transparent
   sm:hidden pointer-events-none">
 </div>
 
 {/* Mobile Button */}
   <Link to="/allprojects">
-<div className="absolute bottom-4 left-0 w-full flex justify-center sm:hidden z-20  ">
+<div className="absolute bottom-4 left-0 w-full flex justify-center sm:hidden z-30  ">
   <button className="px-3 py-1.5 text-xs border border-zinc-400 
     text-zinc-200 rounded-full flex items-center gap-1.5
     backdrop-blur-sm bg-black/40
