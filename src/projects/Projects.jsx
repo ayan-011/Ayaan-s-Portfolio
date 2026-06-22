@@ -47,7 +47,7 @@ export function Project() {
         Projects
       </div>
 
-      <div className="bg- grid sm:grid-cols-2 grid-cols-1 py-2 md:p-3">
+      <div className="bg- grid sm:grid-cols-2 grid-cols-1 py-2 md:p-3  ">
         {cardsData.map((card) => (
           // <Card
           //   key={card.id}

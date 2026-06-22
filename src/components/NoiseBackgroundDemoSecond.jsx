@@ -14,10 +14,12 @@ export function NoiseBackgroundDemoSecond({ title, description, image, live, git
           "rgb(255, 200, 100)",
         ]}>
         <Card className="">
+          <a href={live} target="_blank" rel="noopener noreferrer ">
           <img
             src={image}
                alt={title}
-            className="h-50 w-full rounded-lg object-cover cursor-pointer  hover:opacity-95 transition-transform duration-700 ease-out hover:scale-110" />
+            className="h-50 w-full   object-cover cursor-pointer  hover:opacity-95 transition-transform duration-250 ease-out hover:scale-102 select-none pointer-events-none" />
+          </a>
           <div className="px-3 py-2">
             <div className="title flex flex-row justify-between border-b-[1px] border-b-zinc-700 py-1" >
     <div className="text-md text-zinc-200 font-semibold">{title}</div>

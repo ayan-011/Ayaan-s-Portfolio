@@ -37,6 +37,7 @@ function App() {
       "/ayan.jpg", 
       "/thumbnails/ecommerce.png", 
       "/thumbnails/scriptgenerator.png", 
+      "/thumbnails/sportech.png", 
     // "/images/car3.jpg",
     // "/carvideo.mp4",
   ];
