@@ -77,7 +77,7 @@ function App() {
 
   return (
       
-  <div className="relative min-h-screen"  >
+  <div className="relative min-h-screen select-none"  >
     <div
         className="absolute inset-0 bg-[url('/noise.gif')] opacity-5 pointer-events-none  z-30"
       />
