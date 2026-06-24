@@ -5,9 +5,9 @@ export function Navbar(){
 
     return(
         <>
-        <div className="NAVBAR backdrop-blur-lg w-full  top-0   fixed flex justify-center z-99">
+        <div className="NAVBAR backdrop-blur-lg  bg-mirror w-full  top-0   fixed flex justify-center z-99">
    
-    <div className=" flex flex-row justify-between bg-blue-90 max-w-6xl  w-full  border-b-[1px] border-[#525252] lg:px-3 px-1 lg:py-2 p-1 lg:p-0 bg-red-  ">
+    <div className=" flex flex-row justify-between bg-blue-9 max-w-6xl  w-full  border-b-[1px] border-[#525252] lg:px-3 px-1 lg:py-2 p-1 lg:p-0 bg-red-  ">
 
       <div className="IntroWithProfile flex flex-row bg-red-90 w-fit px-1 py-1 items-center  justify-center lg:gap-3 gap-2  bg-red-90 ">
 
