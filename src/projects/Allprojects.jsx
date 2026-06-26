@@ -71,17 +71,22 @@ export default function Allprojects() {
             >
               {/* Image */}
               <div className="h-48 w-full   bg-cover">
+
+                <a href={project.live} target="_blank" rel="noopener noreferrer">
+
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover   hover:scale-[1.02] transition duration-300"
                 />
+                </a>
+
               </div>
 
               {/* Link  */}
-              <div className="links  w-full justify-end flex">
+              <div className="links  w-full justify-end flex  border-b-[1px] border-zinc-800">
 
-                <div className="logos flex gap-2 p-2">
+                <div className="logos flex gap-2 p-2 px-4 mt-2 gap-4">
                     <a  className="hover:text-zinc-400 " target="_blank" rel="noopener noreferrer"   href={project.github} ><FaGithub /></a>
                     
                     <a className="hover:text-zinc-400" target="_blank" rel="noopener noreferrer"  href={project.live} ><FiLink /></a>
@@ -90,7 +95,7 @@ export default function Allprojects() {
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="px-6 py-4">
                 <h2 className="text-lg font-semibold mb-1">
                   {project.title}
                 </h2>
